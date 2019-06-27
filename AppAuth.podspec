@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppAuth"
-  s.version      = "1.0.0.beta1"
+  s.version      = "1.0.0"
   s.summary      = "AppAuth for iOS and macOS is a client SDK for communicating with OAuth 2.0 and OpenID Connect providers."
 
   s.description  = <<-DESC
@@ -49,7 +49,8 @@ It follows the OAuth 2.0 for Native Apps best current practice
     # iOS
     externalUserAgent.ios.source_files      = "Source/iOS/**/*.{h,m}"
     externalUserAgent.ios.deployment_target = "7.0"
-    externalUserAgent.ios.frameworks        = "SafariServices", "AuthenticationServices"
+    externalUserAgent.ios.frameworks        = "SafariServices"
+    externalUserAgent.ios.weak_frameworks   = "AuthenticationServices"
 
     # macOS
     externalUserAgent.osx.source_files = "Source/macOS/**/*.{h,m}"
