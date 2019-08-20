@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*! @brief The convenience initializer for devices with iOS 11+
  */
-- (nullable instancetype)init API_AVAILABLE(ios(11));
+- (instancetype)init API_AVAILABLE(ios(11));
 
 /*! @brief The designated initializer.
     @param presentingViewController The view controller from which to present the
